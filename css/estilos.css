@@ -1,0 +1,229 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Madimi+One&display=swap");
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: "Madimi One", sans-serif;
+}
+
+.logo {
+width: 200px;
+border-radius: 50%;
+
+}
+
+footer {
+height: 100%;
+width: 100%;
+text-align: center;
+background-color: rgb(209, 157, 118);
+color: white;
+font-size: 20px;
+}
+
+.redes {
+margin-top: 30px;
+}
+
+.redes a {
+color:aqua;
+font-size: 30px;
+letter-spacing: 10px;
+}
+
+.redes a:hover {
+text-decoration: none;
+background-color: black;
+}
+
+.navbar {
+background-color: rgb(209, 157, 118);
+width: 100%;
+}
+
+.nav-link {
+color: white !important;
+text-transform: uppercase;
+}
+
+.nav-link:hover {
+color: black !important;
+background-color: rgb(230, 11, 11);
+}
+
+.collapse {
+display: flex;
+justify-content: flex-end;
+}
+
+h1 {
+font-size: 25px;
+text-align: center;
+color: rgba(23, 141, 162, 0.785);
+text-transform: uppercase;
+background-color: black;
+margin-top: 30px;
+text-shadow: 0 0 5px white;
+}
+
+.item {
+border: 2px solid rgba(31, 4, 95, 0.893);
+background-color: black;
+background-size: cover;
+background-position: center;
+}
+
+.imagenes {
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(8, 200px);
+padding: 20px;
+background-color: black;
+grid-gap: 20px;
+}
+
+.item1 {
+background-image: url(../img/rental\ interior\ central.jpeg);
+}
+
+.item2 {
+background-image: url(../img/gafas.jpeg);
+}
+
+.item3 {
+background-image: url(../img/camperas.jpeg);
+}
+
+.item4 {
+background-image: url(../img/botas.jpeg);
+}
+
+.item5 {
+background-image: url(../img/camperas2.jpeg);
+}
+
+.item6 {
+background-image: url(../imagenes/habitacion\ superior\ 2.jpeg);
+}
+
+.item7 {
+background-image: url(../imagenes/baño\ 4.jpeg);
+}
+
+.item8 {
+background-image: url(../imagenes/pileta\ 2.jpeg);
+}
+
+@media only screen and (min-width: 450px) {
+.imagenes {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+}
+}
+@media only screen and (min-width: 750px) and (max-width: 1024px) {
+.imagenes {
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(4, 200px);
+}
+.item1 {
+    grid-column: 1/3;
+    grid-row: 1/2;
+}
+.item2 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+.item3 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.item4 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+.item5 {
+    grid-column: 1/3;
+    grid-row: 3/4;
+}
+.item6 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.item7 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.item8 {
+    grid-column: 2/4;
+    grid-row: 4/5;
+}
+}
+@media only screen and (min-width: 1024px) {
+.imagenes {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 200px 200px;
+}
+}
+body {
+    background-color: rgb(209, 157, 118);
+}
+
+.call {
+height: 100%;
+text-decoration: none;
+background-color: black;
+color: white;   
+padding: 20px;
+border: 5px solid black;
+}
+
+h2 {
+font-size: 35px;
+padding: 20px;
+color: rgba(23, 141, 162, 0.785);
+text-align: center;
+text-transform: uppercase;
+text-shadow: 0 0 5px white;
+}
+
+.call a {
+color: white;
+background-color: rgba(31, 4, 95, 0.893);
+text-decoration: none;
+text-transform: uppercase;
+}
+
+.call a:hover {
+color: black;
+background-color: rgb(230, 11, 11);
+}
+
+.subir {
+height: 40px;
+width: 40px;
+background-color: rgb(230, 11, 11);
+color: white;
+position: fixed;
+bottom: 40px;
+right: 40px;
+text-align: center;
+font-size: 30px;
+border-radius: 50%;
+}
+
+html {
+scroll-behavior: smooth;
+}
+
+.container {
+background-color: rgb(230, 11, 11);
+color: floralwhite;
+text-transform: uppercase;
+}
+
+.con {
+color: white;
+text-transform: uppercase;
+text-align: center;
+}
